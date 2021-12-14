@@ -1,0 +1,173 @@
+/*
+ **************************************
+	Body/Barvy
+ **************************************
+*/
+
+$primary: lightskyblue;
+$font: "Open sans", sans-serif; 
+
+
+html {
+    box-sizing: border-box;
+  }
+
+/* intuitivnejsi box-sizing */
+*, :after, :before { box-sizing: border-box; }
+
+body {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/*
+ **************************************
+	MAIN 
+ **************************************
+*/
+
+.glide__slide img {
+    width: 100%;
+}
+
+.main {
+  margin: 50px 0;
+  padding: 30px;
+  border: 3px solid $primary;
+  overflow: auto;
+}
+
+/* 
+**************************
+HEADER
+**************************
+*/
+
+.header {
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerleft {
+    align-items: flex-start;
+    flex-grow: 3;
+}
+
+.headertitle {
+    color: $primary;
+    text-align: center;
+}
+
+/*
+***************************
+MENU
+***************************
+*/
+
+  .menu {
+    background-color: $primary;
+  }
+  
+  .menu__list {
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .menu__item:not(:last-child) {
+    border-right: 1px solid white;
+  }
+  
+  .menu__link {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu__link:hover, .menu__link:focus {
+    background-color: white;
+    color: $primary;
+  }
+  
+  /*
+***************************
+FOOTER
+***************************
+*/
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 640px) {
+
+/* 
+**************************
+HEADER
+**************************
+*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.headertop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.headertitle {
+  text-align: left;
+}
+
+.menu__list {
+    flex-direction: row;
+}
+
+.logo {
+    margin-left: auto;
+    flex-grow: 1;
+}
+
+    /*
+***************************
+FOOTER
+***************************
+*/
+
+.socialmedia {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+   
+    /*
+***************************
+KONTAKTY
+***************************
+*/
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+}

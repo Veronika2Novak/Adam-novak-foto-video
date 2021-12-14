@@ -7,6 +7,8 @@
     <title>{{ title }}</title>
 
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/glide.core.min.css" />
+    <link rel="stylesheet" href="/css/glide.theme.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,23 +18,21 @@
     />
   </head>
 
-
   <body>
 
     <div class="container">
     <div class="header">
 
+        <div class="headertop">
         <div class="header_logo">
             <a href="https://svatbyadam.cz/"><img src="/logos/logo.jpg" /></a>
         </div>
-
-        <div class="headerleft">
 
         <div class="headertitle">
             <h1>ADAM NOVÁK</h1>
             <h3>foto & video</h3>
         </div>
-
+    </div>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item"><a href="/index.html" class="menu__link">Úvod</a></li>
@@ -42,7 +42,7 @@
             <li class="menu__item"><a href="/english" class="menu__link">English</a></li>
           </ul>
         </nav>
-        </div>
+        
 
       
     </div>
@@ -67,14 +67,18 @@
       </div>
     
         <p>© 2021 Veronika Novakova</p>
-
-        <script src="splide.min.js"></script>
-
-        <script>
-          new Splide(".splide").mount();
-        </script>
       
     </div>
 </div>
+
+<script src="glide.min.js"></script>
+
+<script>
+  new Glide('.glide', {
+      autoplay: 4000,
+      hoverpause: false
+  }).mount()
+</script>
+
   </body>
 </html>
