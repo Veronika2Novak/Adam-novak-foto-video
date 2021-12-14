@@ -3,6 +3,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("photos");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("logos");
+    eleventyConfig.addPassthroughCopy("glide.min.js");
+
 
     return {
         // možné formáty šablon
