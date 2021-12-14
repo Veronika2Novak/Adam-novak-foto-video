@@ -1,86 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adam Novák - foto & video</title>
+---
+layout: home-page.njk 
+title: Adam Novák - foto & video
+---
 
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-
-  </head>
-  <body>
-    <div class="header">
-      <div class="headerleft">
-        <h1>ADAM NOVÁK - foto & video</h1>
-
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="">Úvod</a></li>
-            <li class="menu__item"><a href="omne/">O mně</a></li>
-            <li class="menu__item">
-              <a href="/mojetvorba.html">Moje tvorba</a>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="photos/family.jpg" alt="Podzim" />
             </li>
-            <li class="menu__item"><a href="kontakt/">Kontakt</a></li>
-            <li class="menu__item"><a href="blog/">English</a></li>
+            <li class="splide__slide">
+              <img src="photos/forest.jpg" alt="Les" />
+            </li>
+            <li class="splide__slide">
+              <img src="photos/wedding1.jpg" alt="Svatba" />
+            </li>
+            <li class="splide__slide">
+              <img src="photos/wedding2.jpg" alt="Svatba" />
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
 
-      <div class="header_logo">
-        <a href="https://svatbyadam.cz/"><img src="logos/logo.jpg" /></a>
-      </div>
-    </div>
-
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide"><img src="photos/family.jpg" alt="Podzim" /></li>
-          <li class="splide__slide"><img src="photos/forest.jpg" alt="Les" /></li>
-          <li class="splide__slide"><img src="photos/wedding1.jpg" alt="Svatba" /></li>
-          <li class="splide__slide"><img src="photos/wedding2.jpg" alt="Svatba" /></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="socialmedia">
-        <a class="youtube" href="https://www.youtube.com/user/lezecadam"
-          ><img src="logos/youtube.png" alt="youtube logo"
-        /></a>
-
-        <a class="instagram" href="https://www.instagram.com/adam.rw2/?hl=cs"
-          ><img src="logos/instagram.png" alt="instagram logo"
-        /></a>
-
-        <a href="https://www.facebook.com/adam.novak.92754/"
-          ><img src="logos/facebook.png" alt="facebook logo"
-        /></a>
-      </div>
-
-      <div class="footerkontakty">
-        <p>Kontakty</p>
-        <p>
-          Email: <a href="mailto: lezecadam@gmail.com">lezecadam@gmail.com</a>
-        </p>
-        <p>Telefon: +420 605 205 824</p>
-
-        <p>© 2021 Adam Novak</p>
-
-<script src="splide.min.js"></script>
-
-        <script>
-          new Splide( '.splide' ).mount();
-        </script>
-
-      </div>
-    </div>
-  </body>
-</html>
+    

@@ -1,0 +1,24 @@
+{
+  "name": "adam-novak-foto-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "splide.min.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veronika2Novak/Adam-novak-foto-video.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veronika2Novak/Adam-novak-foto-video/issues"
+  },
+  "homepage": "https://github.com/Veronika2Novak/Adam-novak-foto-video#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
